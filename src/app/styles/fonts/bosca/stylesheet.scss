@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Bosca";
+  src: url("Bosca-Medium.eot");
+  src: local("Bosca Medium"), local("Bosca-Medium"),
+    url("Bosca-Medium.eot?#iefix") format("embedded-opentype"),
+    url("Bosca-Medium.woff2") format("woff2"),
+    url("Bosca-Medium.woff") format("woff"),
+    url("Bosca-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bosca";
+  src: url("Bosca-Regular.eot");
+  src: local("Bosca"), local("Bosca-Regular"),
+    url("Bosca-Regular.eot?#iefix") format("embedded-opentype"),
+    url("Bosca-Regular.woff2") format("woff2"),
+    url("Bosca-Regular.woff") format("woff"),
+    url("Bosca-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bosca";
+  src: url("Bosca-Bold.eot");
+  src: local("Bosca Bold"), local("Bosca-Bold"),
+    url("Bosca-Bold.eot?#iefix") format("embedded-opentype"),
+    url("Bosca-Bold.woff2") format("woff2"),
+    url("Bosca-Bold.woff") format("woff"),
+    url("Bosca-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bosca";
+  src: url("Bosca-Light.eot");
+  src: local("Bosca Light"), local("Bosca-Light"),
+    url("Bosca-Light.eot?#iefix") format("embedded-opentype"),
+    url("Bosca-Light.woff2") format("woff2"),
+    url("Bosca-Light.woff") format("woff"),
+    url("Bosca-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
