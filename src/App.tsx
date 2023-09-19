@@ -1,9 +1,10 @@
 import React from "react";
+import Routings from "@pages/index";
 
 function App() {
   return (
     <>
-      <h1>Hello</h1>
+      <Routings />
     </>
   );
 }

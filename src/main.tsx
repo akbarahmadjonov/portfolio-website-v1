@@ -1,9 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './main.scss';
-import { BrowserRouter } from 'react-router-dom';
-import { QueryClient, QueryClientProvider } from 'react-query';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import "./main.scss";
+import "@app/styles/components/style.scss";
+import { BrowserRouter } from "react-router-dom";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 const queryClient = new QueryClient();
 
@@ -13,5 +14,5 @@ ReactDOM.render(
       <App />
     </BrowserRouter>
   </QueryClientProvider>,
-  document.getElementById('root')
+  document.getElementById("root")
 );

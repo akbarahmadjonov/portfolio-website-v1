@@ -1,0 +1,103 @@
+// HOMEPAGE
+.home {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.home__inner {
+  display: flex;
+}
+
+.home__innerLeft {
+  width: 100%;
+  max-width: 245px;
+}
+
+.home__pic {
+  display: flex;
+  margin: 0 auto;
+
+  border-radius: 50%;
+
+  &:hover {
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+  }
+}
+
+.home__title {
+  margin: 0;
+  margin-top: 15px;
+
+  font-weight: 600;
+  font-size: 26px;
+  color: #fff;
+}
+
+.home__job {
+  margin: 0;
+
+  font-size: 14px;
+  color: #777676;
+}
+
+.home__links {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.home__profileLinks {
+  display: flex;
+  flex-wrap: wrap;
+
+  & a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 3px;
+
+    border-radius: 50%;
+    transition: all 0.1s ease;
+    &:hover {
+      background-color: #777676;
+    }
+  }
+}
+
+.home__componentPagesItem {
+  display: block;
+  padding: 8px;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+
+  color: #bebebe;
+  border: 1px solid transparent;
+  transition: all 0.1s ease;
+
+  &:hover {
+    border: 1px solid #777676;
+    color: #fff;
+  }
+}
+
+.active-link {
+  font-size: 16px;
+
+  color: white;
+}
+
+// RIGHT BAR
+.home__innerRight {
+  width: 100%;
+  margin-left: 50px;
+  padding: 20px;
+
+  background-color: white;
+}

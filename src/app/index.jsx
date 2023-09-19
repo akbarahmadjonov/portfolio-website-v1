@@ -1,14 +1,13 @@
-import React from 'react';
-import './styles/styles.scss';
+import "./styles/styles.scss";
 
-import Routings from './../pages';
+import Routings from "./../pages";
 
 const App = () => {
-    return (
-        <>
-            <Routings />
-        </>
-    );
+  return (
+    <>
+      <Routings />
+    </>
+  );
 };
 
 export default App;

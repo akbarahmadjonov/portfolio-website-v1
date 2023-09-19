@@ -1,6 +1,5 @@
 //import fonts
-@import "./fonts/bosca/stylesheet.scss";
-@import "./fonts/sf_pro/stylesheet.scss";
+@import "./fonts/Open_sans/stylesheet.scss";
 //import base
 @import "./base/style.scss";
 //import components
@@ -9,7 +8,8 @@
 // @import "./layouts/style.scss";
 
 body {
-  font-family: "Bosca", monospace;
+  font-family: "Open Sans", sans-serif;
+  font-family: monospace;
   margin: 0;
 }
 

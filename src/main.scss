@@ -1,18 +1,19 @@
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
   /* background-color: #7e8681; */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #008b51;
-  border-radius: 4px;
+  background: #ccc;
+  border-radius: 1px;
 }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f6f6f8;
+  background-color: #0c0c0c;
+  font-family: "Open Sans", sans-serif;
 }
 
 /**
@@ -33,7 +34,7 @@ body {
  */
 .container {
   width: 100% !important;
-  max-width: 1350px !important;
+  max-width: 1100px !important;
   padding: 0 20px !important;
   margin: 0 auto !important;
 }
