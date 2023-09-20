@@ -10,7 +10,7 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { BiLogoUpwork } from "react-icons/bi";
 import { BiLogoTelegram } from "react-icons/bi";
 import { BsStackOverflow } from "react-icons/bs";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { AiOutlineMenuFold } from "react-icons/ai";
 
 // Type for component's state
 interface HomeState {
@@ -59,7 +59,7 @@ export const Home: React.FC = () => {
                 <p className="home__job">Frontend Developer</p>
               </div>
               <div className="home__menuIconWrapper">
-                <RxHamburgerMenu
+                <AiOutlineMenuFold
                   className="home__menuIcon"
                   color="white"
                   size={50}
@@ -181,11 +181,11 @@ export const Home: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className="container">
+          {/* <div className="container"> */}
             <div className="home__innerRight">
               <Outlet />
             </div>
-          </div>
+          {/* </div> */}
         </div>
       </div>
     </div>
