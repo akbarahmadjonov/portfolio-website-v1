@@ -1,7 +1,10 @@
 // ABOUT
+.about {
+  padding: 14px;
+}
+
 .about__wrapper {
   margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 .about__parts {
@@ -10,7 +13,7 @@
   margin-bottom: 15px;
 
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13.5px;
 }
 
 .about__icon {
@@ -26,5 +29,53 @@
   &:hover {
     color: #1a1a1a;
     text-decoration: underline !important;
+  }
+}
+
+.about__selfSectionWrapper {
+  width: 100%;
+  max-width: 720px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.about__myselfSection {
+  font-weight: 500;
+  font-size: 13.5px;
+  line-height: 20px;
+}
+
+// SKILLS
+.about__skillsList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.skills__item {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 13.5px;
+}
+
+.about__checkIcon {
+  margin-right: 5px;
+}
+
+// MEDIA QUERY - RESPONSIVENESS
+@media only screen and (max-width: 1073px) {
+  .about__wrapper {
+    margin-top: 20px;
+  }
+
+  .about__selfSectionWrapper {
+    max-width: 900px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }

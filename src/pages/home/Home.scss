@@ -40,6 +40,10 @@
   color: #777676;
 }
 
+.home__menuIcon{
+  display: none;
+}
+
 .home__links {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -95,9 +99,79 @@
 
 // RIGHT BAR
 .home__innerRight {
-  width: 100%;
   margin-left: 50px;
   padding: 20px;
 
   background-color: white;
+}
+
+// MEDIA QUERY - RESPONSIVENESS
+@media only screen and (max-width: 1131px) {
+  .home__inner {
+    display: block;
+  }
+
+  .home__innerLeft {
+    margin: 0 auto;
+  }
+
+  .home__componentPages {
+    display: flex;
+    justify-content: center;
+  }
+
+  .home__innerRight {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .home {
+    margin-top: 20px;
+  }
+
+  .home__innerLeft {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .home__pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .home__title {
+    font-size: 17px;
+  }
+
+  .home__job {
+    font-size: 13px;
+  }
+
+  .home__menuIcon{
+  display: block;
+}
+
+  .home__menuIconWrapper {
+    margin-left: auto;
+  }
+
+  .home__links {
+    display: none;
+  }
+
+  .home__flexWrapper {
+    margin-left: 10px;
+  }
+
+  .home__flexs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .home__componentPages {
+    display: none;
+  }
 }

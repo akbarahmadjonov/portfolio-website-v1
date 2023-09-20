@@ -10,6 +10,7 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { BiLogoUpwork } from "react-icons/bi";
 import { BiLogoTelegram } from "react-icons/bi";
 import { BsStackOverflow } from "react-icons/bs";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export const Home = () => {
   const location = useLocation();
@@ -23,17 +24,29 @@ export const Home = () => {
       <div className="container">
         <div className="home__inner">
           <div className="home__innerLeft">
-            <NavLink to={"/"}>
-              <img
-                className="home__pic"
-                src={ProfilePic}
-                width={175}
-                height={175}
-                alt="profile picture"
-              />
-            </NavLink>
-            <h2 className="home__title">Akbar Ahmadjonov</h2>
-            <p className="home__job">Frontend Developer</p>
+            <div className="home__flexs">
+              <NavLink to={"/"}>
+                <img
+                  className="home__pic"
+                  src={ProfilePic}
+                  width={175}
+                  height={175}
+                  alt="profile picture"
+                />
+              </NavLink>
+              <div className="home__flexWrapper">
+                {" "}
+                <h2 className="home__title">Akbar A.</h2>
+                <p className="home__job">Frontend Developer</p>
+              </div>
+              <div className="home__menuIconWrapper">
+                <RxHamburgerMenu
+                  className="home__menuIcon"
+                  color="white"
+                  size={50}
+                />
+              </div>
+            </div>
             <div className="home__links">
               <span className="home__profileLinks">
                 <a
@@ -81,14 +94,15 @@ export const Home = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink
+                <a
+                  target="_blank"
+                  href="https://teal-nicholle-18.tiiny.site/"
                   className={`home__componentPagesItem ${
                     isLinkActive("/resume") ? "active-link" : ""
                   }`}
-                  to={"/resume"}
                 >
                   RESUME
-                </NavLink>
+                </a>
               </li>
               <li>
                 <NavLink
@@ -142,8 +156,8 @@ export const Home = () => {
               </li>
             </ul>
           </div>
-          <div className="home__innerRight">
-            <div className="container">
+          <div className="container">
+            <div className="home__innerRight">
               <Outlet />
             </div>
           </div>
