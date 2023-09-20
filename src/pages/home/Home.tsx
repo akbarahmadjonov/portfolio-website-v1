@@ -181,11 +181,9 @@ export const Home: React.FC = () => {
               </li>
             </ul>
           </div>
-          {/* <div className="container"> */}
-            <div className="home__innerRight">
-              <Outlet />
-            </div>
-          {/* </div> */}
+          <div className="home__innerRight">
+            <Outlet />
+          </div>
         </div>
       </div>
     </div>

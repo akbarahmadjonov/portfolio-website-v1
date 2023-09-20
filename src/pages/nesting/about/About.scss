@@ -74,7 +74,7 @@
   }
 
   .about__selfSectionWrapper {
-    max-width: 900px;
+    width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -86,8 +86,8 @@
     display: block;
   }
 
-  .about__myselfSection{
+  .about__myselfSection {
     font-size: 20px;
-  line-height: 30px;
+    line-height: 30px;
   }
 }
