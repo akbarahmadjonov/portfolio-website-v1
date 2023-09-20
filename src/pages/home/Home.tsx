@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import "./Home.scss";
 import ProfilePic from "@images/akbar-profile.jpg";
@@ -12,11 +12,30 @@ import { BiLogoTelegram } from "react-icons/bi";
 import { BsStackOverflow } from "react-icons/bs";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-export const Home = () => {
-  const location = useLocation();
+// Type for component's state
+interface HomeState {
+  isMenuOpen: boolean;
+}
 
+export const Home: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState<HomeState>({
+    isMenuOpen: false,
+  });
+
+  const handleMenuIcon = () => {
+    setIsMenuOpen((prevState) => ({
+      ...prevState,
+      isMenuOpen: !prevState.isMenuOpen,
+    }));
+  };
+
+  const location = useLocation();
   const isLinkActive = (path) => {
     return location.pathname === path;
+  };
+
+  const handleCloseMenu = () => {
+    setIsMenuOpen(false);
   };
 
   return (
@@ -44,6 +63,7 @@ export const Home = () => {
                   className="home__menuIcon"
                   color="white"
                   size={50}
+                  onClick={handleMenuIcon}
                 />
               </div>
             </div>
@@ -82,7 +102,12 @@ export const Home = () => {
               </span>
             </div>
             {/* Components */}
-            <ul className="home__componentPages">
+            <ul
+              className={`home__componentPages ${
+                isMenuOpen.isMenuOpen ? "active" : ""
+              }`}
+              onClick={handleCloseMenu}
+            >
               <li>
                 <NavLink
                   className={`home__componentPagesItem ${
