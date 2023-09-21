@@ -90,4 +90,14 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  .about__skillsList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .about__skillsList {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

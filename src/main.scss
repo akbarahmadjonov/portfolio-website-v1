@@ -1,13 +1,12 @@
 @import "@app/styles/base/containers";
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 14px;
   /* background-color: #7e8681; */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ccc;
-  border-radius: 1px;
+  background: rgb(214, 214, 214);
 }
 
 body {

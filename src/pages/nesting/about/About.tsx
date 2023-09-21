@@ -52,7 +52,7 @@ export const About = () => {
           </p>
         </div>
         {/* SKILLS SECTION */}
-        {/* <section className="about__skills">
+        <section className="about__skills">
           <h2 className="page__title">SKILLS</h2>
           <ul className="about__skillsList">
             <li className="skills__item">
@@ -116,7 +116,7 @@ export const About = () => {
               <FaCheck className="about__checkIcon" /> Chrome DevTools
             </li>
           </ul>
-        </section> */}
+        </section>
       </div>
     </React.Fragment>
   );
