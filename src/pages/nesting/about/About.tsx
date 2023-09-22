@@ -15,7 +15,7 @@ export const About = () => {
           <span className="about__parts">
             <FaInfoCircle className="about__icon" size={14} /> Resume:{" "}
             <a
-              className="about__links"
+              className="about__links link"
               target="_blank"
               href="https://teal-nicholle-18.tiiny.site/"
             >

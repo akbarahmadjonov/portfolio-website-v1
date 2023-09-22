@@ -1,0 +1,30 @@
+// CONTACT
+.contact {
+  padding: 14px;
+}
+
+.contact__details {
+  margin-top: 40px;
+}
+
+.contact__items {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact__links {
+  margin-left: 12px;
+
+  font-weight: 500;
+  font-size: 13.5px;
+}
+
+.contact__innerLink {
+  font-weight: 500;
+  color: #9e9e9e;
+
+  &:hover {
+    color: #1a1a1a;
+  }
+}
