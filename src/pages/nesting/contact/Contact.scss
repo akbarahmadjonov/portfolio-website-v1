@@ -8,9 +8,33 @@
 }
 
 .contact__items {
+  position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: #14a800;
+  }
+  50% {
+    background-color: #000;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+.upwork {
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  animation: colorChange 2s infinite;
 }
 
 .contact__links {

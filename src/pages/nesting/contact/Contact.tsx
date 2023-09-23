@@ -9,8 +9,22 @@ import { BiLogoUpwork } from "react-icons/bi";
 import { BiLogoTelegram } from "react-icons/bi";
 import { BsStackOverflow } from "react-icons/bs";
 import { AiOutlineMenuFold } from "react-icons/ai";
+// ANT DESIGN
+import { Button, Popover } from "antd";
 
 export const Contact = () => {
+  const upworkPopoverContent = (
+    <div>
+      <p>I'm available for projects on Upwork.</p>
+      <a
+        target="_blank"
+        href="https://www.upwork.com/freelancers/~013a4ec95ed10e8d2e"
+      >
+        Click here
+      </a>
+    </div>
+  );
+
   return (
     <React.Fragment>
       <div className="contact">
@@ -70,16 +84,24 @@ export const Contact = () => {
           </span>
           {/* UPWORK */}
           <span className="contact__items">
-            <BiLogoUpwork size={18} />{" "}
-            <span className="contact__links">
-              Hire me on{" "}
-              <a
-                className="contact__innerLink link"
-                href="https://www.upwork.com/freelancers/~013a4ec95ed10e8d2e"
-              >
-                Upwork
-              </a>
-            </span>
+            <Popover
+              content={upworkPopoverContent}
+              title="Upwork Contact"
+              trigger="hover"
+            >
+              <div className="upwork"></div>
+              <BiLogoUpwork size={18} />
+              {""}
+              <span className="contact__links">
+                Hire me on{" "}
+                <a
+                  className="contact__innerLink link"
+                  href="https://www.upwork.com/freelancers/~013a4ec95ed10e8d2e"
+                >
+                  Upwork
+                </a>
+              </span>
+            </Popover>
           </span>
           {/* TELEGRAM */}
           <span className="contact__items">
