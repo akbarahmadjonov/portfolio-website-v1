@@ -1,11 +1,9 @@
 import React from "react";
 import "./ProfileSection.scss";
-import PMI from "@images/PMI.png";
-import Najotalim from "@images/najot-talim.png";
-import Lifetech from "@images/lifetech.jpg";
 
 interface ProfileSectionProps {
   page__title: string;
+  page__img: string;
   page__place: string;
   page__date: string;
   page__linkWeb: string;
@@ -15,7 +13,7 @@ interface ProfileSectionProps {
 
 export const ProfileSection: React.FC<ProfileSectionProps> = ({
   page__title,
-  // img
+  page__img,
   page__place,
   page__date,
   page__linkWeb,
@@ -31,7 +29,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
             <div className="profileSection__item">
               <img
                 className="profileSection__pic"
-                src={PMI}
+                src={page__img}
                 width={100}
                 height={100}
                 alt="logo profileSection"
