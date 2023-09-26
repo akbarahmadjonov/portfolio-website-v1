@@ -1,56 +1,90 @@
 import React from "react";
-import { ProfileSection } from "@components/ProfileSection/ProfileSection.tsx";
+import { useQuery } from "react-query";
+import { fetchExperience } from "@api/experienceApi";
+import { ExperienceData } from "@types/experienceTypes";
+import { ProfileSection } from "@components/ProfileSection/ProfileSection";
+import { Skeleton } from "antd";
 
-interface Experience {
-  page__title: string;
-  page__place: string;
-  page__date: string;
-  page__linkWeb: string;
-  page__link: string;
-  page__summary: string;
-}
+export const Experience: React.FC = () => {
+  const {
+    data: experienceData,
+    isLoading,
+    isError,
+  } = useQuery("experiences", fetchExperience);
 
-export const Experience: React.FC<Experience> = () => {
-  const experienceData = [
-    {
-      page__place: "PMI - Project Management Institute",
-      page__date: "2023",
-      page__linkWeb: "https://www.pmi.org",
-      page__link: "pmi.org",
-      page__summary:
-        "I graduated in September 2023 from the PMI with Full-Stack Web Development and a minor in project management.",
-    },
-    {
-      page__place: "Najot Ta'lim - Full-stack Web Development Training",
-      page__date: "2022 - 2023",
-      page__linkWeb: "https://najottalim.uz",
-      page__link: "najottalim.uz",
-      page__summary:
-        "I got many of my general courses at Najot Ta'lim with Full-Stack Web Development and some projects.",
-    },
-    {
-      page__place: "LifeTech - Frontend Web Development Training",
-      page__date: "2020 - 2021",
-      page__linkWeb: "https://lifetech.uz",
-      page__link: "lifetech.uz",
-      page__summary:
-        "Successfully got many of my frontend courses at LifeTech with Frontend Web Development and also some projects.",
-    },
-  ];
+  if (isLoading) {
+    return (
+      <div style={{ maxWidth: "500px" }}>
+        <h2 style={{ padding: "14px 14px 0 14px" }} className="page__title">
+          EXPERIENCE
+        </h2>
+        <div
+          className="experience-card"
+          style={{
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <Skeleton.Image
+            active={true}
+            style={{ flex: 1, marginRight: "20px" }}
+          />
+          <div className="experience-content" style={{ flex: 1 }}>
+            <Skeleton paragraph={{ rows: 4 }} active />
+          </div>
+        </div>
+        <div
+          className="experience-card"
+          style={{
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <Skeleton.Image
+            active={true}
+            style={{ flex: 1, marginRight: "20px" }}
+          />
+          <div className="experience-content" style={{ flex: 1 }}>
+            <Skeleton paragraph={{ rows: 4 }} active />
+          </div>
+        </div>
+        <div
+          className="experience-card"
+          style={{
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <Skeleton.Image
+            active={true}
+            style={{ flex: 1, marginRight: "20px" }}
+          />
+          <div className="experience-content" style={{ flex: 1 }}>
+            <Skeleton paragraph={{ rows: 4 }} active />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (isError) {
+    return <div>Error loading experience data</div>;
+  }
 
   return (
     <React.Fragment>
       <h2 style={{ padding: "14px 14px 0 14px" }} className="page__title">
         EXPERIENCE
       </h2>
-      {experienceData.map((data, index) => (
+      {experienceData.map((data: ExperienceData, index: number) => (
         <ProfileSection
           key={index}
-          page__place={data.page__place}
-          page__date={data.page__date}
-          page__linkWeb={data.page__linkWeb}
-          page__link={data.page__link}
-          page__summary={data.page__summary}
+          page__img={`http://localhost:3000/${data.image}`}
+          page__place={data.place}
+          page__date={data.date}
+          page__linkWeb={data.linkWeb}
+          page__link={data.website}
+          page__summary={data.summary}
         />
       ))}
     </React.Fragment>
