@@ -79,7 +79,7 @@ export const Portfolio: React.FC = () => {
       {portfolioData.map((data: PortfolioData, index: number) => (
         <ProfileSection
           key={index}
-          page__img={`http://localhost:3000/${data.image}`}
+          page__img={`https://portfolio-7pxp.onrender.com/${data.image}`}
           page__place={data.place}
           page__date={data.date}
           page__linkWeb={data.linkWeb}

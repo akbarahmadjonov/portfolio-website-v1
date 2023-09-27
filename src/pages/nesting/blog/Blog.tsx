@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
+import "./Blog.scss";
 
-export const Blog = () => {
-  return (
-    <div>Blog</div>
-  )
-}
+export const Blog: React.FC = () => {
+  return <div>Blog</div>;
+};

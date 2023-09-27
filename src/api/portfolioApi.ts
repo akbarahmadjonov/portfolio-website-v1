@@ -1,7 +1,9 @@
 import { PortfolioData } from "@types/portfolioTypes";
 
 export async function fetchPortfolio(): Promise<PortfolioData[]> {
-  const response = await fetch("http://localhost:3000/api/portfolios");
+  const response = await fetch(
+    "https://portfolio-7pxp.onrender.com/api/portfolios"
+  );
 
   if (!response.ok) {
     throw new Error("Network response was not ok");
