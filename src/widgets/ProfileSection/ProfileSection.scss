@@ -39,6 +39,7 @@
 // }
 
 .profileSection__pic {
+  margin-bottom: auto;
   object-fit: contain;
   cursor: pointer;
   transition: transform 0.7s ease-in-out;
@@ -78,6 +79,36 @@
   line-height: 20px;
 }
 
+.profileSection__skillsHeader {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  font-size: 12px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.profileSection__skillsList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.profileSection__skillsItem {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 13.5px;
+}
+
+.profileSection__checkIcon {
+  margin-right: 5px;
+}
+
 // MEDIA QUERY - RESPONSIVENESS
 @media only screen and (max-width: 1073px) {
   .profileSection__wrapper {
@@ -108,5 +139,15 @@
 
   .profileSection__itemCoverSummary {
     text-align: left;
+  }
+
+  .profileSection__skillsList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .profileSection__skillsList {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

@@ -85,6 +85,8 @@ export const Portfolio: React.FC = () => {
           page__linkWeb={data.linkWeb}
           page__link={data.website}
           page__summary={data.summary}
+          page__skills={data.skills}
+          showSkills={true}
         />
       ))}
       <small style={{ display: "flex", justifyContent: "flex-end" }}>

@@ -1,5 +1,6 @@
 import React from "react";
 import "./ProfileSection.scss";
+import { FaCheck } from "react-icons/fa";
 
 interface ProfileSectionProps {
   page__title: string;
@@ -9,6 +10,10 @@ interface ProfileSectionProps {
   page__linkWeb: string;
   page__link: string;
   page__summary: string;
+  page__skills: string[];
+
+  // Show skills
+  showSkills: boolean;
 }
 
 export const ProfileSection: React.FC<ProfileSectionProps> = ({
@@ -19,6 +24,8 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
   page__linkWeb,
   page__link,
   page__summary,
+  page__skills,
+  showSkills,
 }) => {
   return (
     <React.Fragment>
@@ -46,6 +53,21 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
                 <p className="profileSection__itemCoverSummary">
                   {page__summary}
                 </p>
+                {showSkills && page__skills.length > 0 ? (
+                  <>
+                    <span className="profileSection__skillsHeader">
+                      Building Tools
+                    </span>
+                    <ul className="profileSection__skillsList">
+                      {page__skills.map((skill: string, index: number) => (
+                        <li className="profileSection__skillsItem" key={index}>
+                          <FaCheck className="profileSection__checkIcon" />{" "}
+                          {skill}
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                ) : null}
               </div>
             </div>
           </div>
