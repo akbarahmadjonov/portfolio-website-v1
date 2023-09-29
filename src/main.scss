@@ -5,6 +5,12 @@
   /* background-color: #7e8681; */
 }
 
+@media only screen and (max-width: 600px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+}
+
 ::-webkit-scrollbar-thumb {
   background: #525252;
 }
