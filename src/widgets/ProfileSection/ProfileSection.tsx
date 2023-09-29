@@ -45,6 +45,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
                 <h3 className="profileSection__place">{page__place}</h3>
                 <p className="profileSection__itemCoverDate">{page__date}</p>
                 <a
+                  target="_blank"
                   className="profileSection__itemCoverWebsite link"
                   href={page__linkWeb}
                 >
