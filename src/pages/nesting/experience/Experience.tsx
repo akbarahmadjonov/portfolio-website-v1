@@ -79,7 +79,7 @@ export const Experience: React.FC = () => {
       {experienceData.map((data: ExperienceData, index: number) => (
         <ProfileSection
           key={index}
-          page__img={`https://portfolio-7pxp.onrender.com/${data.image}`}
+          page__img={`https://portfolio-7uk6.onrender.com/${data.image}`}
           page__place={data.place}
           page__date={data.date}
           page__linkWeb={data.linkWeb}

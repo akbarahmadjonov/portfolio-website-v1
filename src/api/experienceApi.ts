@@ -2,7 +2,7 @@ import { ExperienceData } from "@types/experienceTypes";
 
 export async function fetchExperience(): Promise<ExperienceData[]> {
   const response = await fetch(
-    "https://portfolio-7pxp.onrender.com/api/experiences"
+    "https://portfolio-7uk6.onrender.com/api/experiences"
   );
 
   if (!response.ok) {
