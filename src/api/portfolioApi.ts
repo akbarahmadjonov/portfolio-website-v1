@@ -2,7 +2,7 @@ import { PortfolioData } from "@types/portfolioTypes";
 
 export async function fetchPortfolio(): Promise<PortfolioData[]> {
   const response = await fetch(
-    "https://portfolio-7uk6.onrender.com/api/portfolios"
+    "https://portfolio-server-apt8.vercel.app/api/portfolios"
   );
 
   if (!response.ok) {
