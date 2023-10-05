@@ -5,6 +5,8 @@
 
 .contact__details {
   margin-top: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #bebebe;
 }
 
 .contact__items {
@@ -50,5 +52,56 @@
 
   &:hover {
     color: #1a1a1a;
+  }
+}
+
+// ACTION SECTION
+.action {
+  padding-top: 30px;
+}
+
+.action__title {
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  color: #1a1a1a;
+}
+
+.action__forms {
+  margin-top: 20px;
+}
+
+.action__inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.action__input {
+  margin-bottom: 20px;
+}
+
+.action__input:nth-child(1) {
+  margin-right: 20px;
+}
+
+.action__button {
+  width: 100%;
+  max-width: 150px;
+  display: block;
+  margin-left: auto;
+  padding: 0.7rem 1rem;
+
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 15px;
+  background-color: #040A2B;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1a1a1a;
   }
 }

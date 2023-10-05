@@ -1,11 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./Portfolio.scss";
 import { useQuery } from "react-query";
 import { fetchPortfolio } from "@api/portfolioApi";
 import { PortfolioData } from "@types/portfolioTypes";
 import { ProfileSection } from "@components/ProfileSection/ProfileSection";
-import { Skeleton } from "antd";
+import { Popover, Skeleton } from "antd";
+import { FcOpenedFolder } from "react-icons/fc";
 
 export const Portfolio: React.FC = () => {
+  // Popover
+  const githubPopoverContent = (
+    <div>
+      <p>
+        GitHub code links are available upon request to those who reach out.
+        Feel free to contact me for more information.
+      </p>
+      <Link to={"/contact"}>Click here to contact</Link>
+    </div>
+  );
+
   const {
     data: portfolioData,
     isLoading,
@@ -73,9 +87,20 @@ export const Portfolio: React.FC = () => {
 
   return (
     <React.Fragment>
-      <h2 style={{ padding: "14px 14px 0 14px" }} className="page__title">
-        PORTFOLIO
-      </h2>
+      <div className="requestCode">
+        <h2 style={{ padding: "14px 14px 0 14px" }} className="page__title">
+          PORTFOLIO
+        </h2>
+        <Popover
+          content={githubPopoverContent}
+          title="Github Code"
+          trigger="hover"
+        >
+          <span>
+            <FcOpenedFolder size={25} />
+          </span>
+        </Popover>
+      </div>
       {portfolioData.map((data: PortfolioData, index: number) => (
         <ProfileSection
           key={index}

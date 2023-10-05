@@ -11,6 +11,8 @@ import { BsStackOverflow } from "react-icons/bs";
 import { AiOutlineMenuFold } from "react-icons/ai";
 // ANT DESIGN
 import { Button, Popover } from "antd";
+import { Input } from "antd";
+const { TextArea } = Input;
 
 export const Contact = () => {
   const upworkPopoverContent = (
@@ -130,6 +132,51 @@ export const Contact = () => {
             </span>
           </span>
         </div>
+        {/* CONTACT FORM */}
+        <section className="action">
+          <h2 className="action__title">Leave a message</h2>
+          <form
+            action="https://formsubmit.co/akbarahmadjonovv@gmail.com"
+            method="POST"
+          >
+            <div className="action__forms">
+              <div className="action__inputs">
+                <input
+                  className="action__input"
+                  // size="large"
+                  placeholder="Subject (Service you're looking for)"
+                  name="subject"
+                />
+                <input
+                  className="action__input"
+                  // size="large"
+                  placeholder="Your name"
+                  name="name"
+                />
+              </div>
+              <input
+                className="action__input"
+                // size="large"
+                placeholder="Email address or phone number"
+                name="email"
+              />
+              <textarea
+                className="action__input"
+                rows={4}
+                placeholder="Your message"
+                name="message"
+              />
+              <div className="action__submit">
+                <small className="action__input-info">
+                  I typically respond within an hour.
+                </small>
+                <button type="submit" className="action__button">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
       </div>
     </React.Fragment>
   );

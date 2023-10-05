@@ -1,6 +1,7 @@
 import React from "react";
 import "./ProfileSection.scss";
 import { FaCheck } from "react-icons/fa";
+import { GoLinkExternal } from "react-icons/go";
 
 interface ProfileSectionProps {
   page__title: string;
@@ -49,7 +50,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
                   className="profileSection__itemCoverWebsite link"
                   href={page__linkWeb}
                 >
-                  {page__link}
+                  {page__link} <GoLinkExternal />
                 </a>
                 <p className="profileSection__itemCoverSummary">
                   {page__summary}
