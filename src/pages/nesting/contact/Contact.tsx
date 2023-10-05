@@ -10,11 +10,19 @@ import { BiLogoTelegram } from "react-icons/bi";
 import { BsStackOverflow } from "react-icons/bs";
 import { AiOutlineMenuFold } from "react-icons/ai";
 // ANT DESIGN
-import { Button, Popover } from "antd";
-import { Input } from "antd";
+import { Popover } from "antd";
+import { Input, message } from "antd";
 const { TextArea } = Input;
 
 export const Contact = () => {
+  // SUCCESS MESSAGE
+  const handleSubmit = () => {
+    setTimeout(() => {
+      message.success("Your message has been sent successfully.");
+    }, 2000);
+  };
+
+  // POPOVER
   const upworkPopoverContent = (
     <div>
       <p>I'm available for projects on Upwork.</p>
@@ -138,29 +146,41 @@ export const Contact = () => {
           <form
             action="https://formsubmit.co/akbarahmadjonovv@gmail.com"
             method="POST"
+            onSubmit={handleSubmit}
           >
+            {/* Honeypot */}
+            <input type="text" name="_honey" style={{ display: "none" }} />
+            {/* Disable CAPTCHA */}
+            <input type="hidden" name="_captcha" value="false" />
+            {/* SUCCESS PAGE */}
+            <input
+              type="hidden"
+              name="_next"
+              value="http://localhost:5173/contact"
+            />
+
             <div className="action__forms">
               <div className="action__inputs">
-                <input
+                <Input
                   className="action__input"
-                  // size="large"
+                  size="large"
                   placeholder="Subject (Service you're looking for)"
                   name="subject"
                 />
-                <input
+                <Input
                   className="action__input"
-                  // size="large"
+                  size="large"
                   placeholder="Your name"
                   name="name"
                 />
               </div>
-              <input
+              <Input
                 className="action__input"
-                // size="large"
+                size="large"
                 placeholder="Email address or phone number"
                 name="email"
               />
-              <textarea
+              <TextArea
                 className="action__input"
                 rows={4}
                 placeholder="Your message"

@@ -96,12 +96,19 @@
   font-size: 17px;
   font-weight: 500;
   border-radius: 15px;
-  background-color: #040A2B;
+  background-color: #040a2b;
   color: white;
   border: none;
   cursor: pointer;
 
   &:hover {
     background-color: #1a1a1a;
+  }
+}
+
+// MEDIA QUERY
+@media only screen and (max-width: 648px) {
+  .action__inputs {
+    display: block;
   }
 }
