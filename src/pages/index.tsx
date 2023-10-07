@@ -1,29 +1,117 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-// import ScrollToTop from "./../shared/components/index";
 
-// Import pages
-import { Home } from "@pages/home/Home";
-import { About } from "@pages/nesting/about/About";
-import { Education } from "@pages/nesting/education/Education";
-import { Experience } from "@pages/nesting/experience/Experience";
-import { Portfolio } from "@pages/nesting/portfolio/Portfolio";
-import { Contact } from "@pages/nesting/contact/Contact";
-import { Blog } from "@pages/nesting/blog/Blog";
+// Import pages lazily
+const Home = lazy(() =>
+  import("@pages/home/Home").then((module) => ({ default: module.Home }))
+);
+const About = lazy(() =>
+  import("@pages/nesting/about/About").then((module) => ({
+    default: module.About,
+  }))
+);
+const Education = lazy(() =>
+  import("@pages/nesting/education/Education").then((module) => ({
+    default: module.Education,
+  }))
+);
+const Experience = lazy(() =>
+  import("@pages/nesting/experience/Experience").then((module) => ({
+    default: module.Experience,
+  }))
+);
+const Portfolio = lazy(() =>
+  import("@pages/nesting/portfolio/Portfolio").then((module) => ({
+    default: module.Portfolio,
+  }))
+);
+const Contact = lazy(() =>
+  import("@pages/nesting/contact/Contact").then((module) => ({
+    default: module.Contact,
+  }))
+);
+const Blog = lazy(() =>
+  import("@pages/nesting/blog/Blog").then((module) => ({
+    default: module.Blog,
+  }))
+);
 
 const Routings = () => {
   return (
     <>
-      {/* <ScrollToTop /> */}
       <Routes>
-        <Route path="/" element={<Home />}>
-          <Route index element={<About />} />
-          <Route path="about" element={<About />} />
-          <Route path="education" element={<Education />} />
-          <Route path="experience" element={<Experience />} />
-          <Route path="portfolio" element={<Portfolio />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="blog" element={<Blog />} />
+        <Route
+          path="/"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              {" "}
+              <Home />{" "}
+            </Suspense>
+          }
+        >
+          <Route
+            index
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                {" "}
+                <About />{" "}
+              </Suspense>
+            }
+          />
+          <Route
+            path="about"
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                {" "}
+                <About />{" "}
+              </Suspense>
+            }
+          />
+          <Route
+            path="education"
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                {" "}
+                <Education />{" "}
+              </Suspense>
+            }
+          />
+          <Route
+            path="experience"
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                {" "}
+                <Experience />{" "}
+              </Suspense>
+            }
+          />
+          <Route
+            path="portfolio"
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                {" "}
+                <Portfolio />{" "}
+              </Suspense>
+            }
+          />
+          <Route
+            path="contact"
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                {" "}
+                <Contact />{" "}
+              </Suspense>
+            }
+          />
+          <Route
+            path="blog"
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                {" "}
+                <Blog />{" "}
+              </Suspense>
+            }
+          />
         </Route>
       </Routes>
     </>
