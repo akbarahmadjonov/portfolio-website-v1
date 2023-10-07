@@ -23,35 +23,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/**
- * SCSS class for a container element.
- *
- * This class sets the width to 100% and the maximum width to 1350px.
- * It also adds padding of 0 20px and centers the container horizontally using auto margins.
- *
- * Example usage:
- * ```
- * .container {
- *   width: 100% !important;
- *   max-width: 1350px !important;
- *   padding: 0 20px !important;
- *   margin: 0 auto !important;
- * }
- * ```
- */
-// .container {
-//   width: 100% !important;
-//   max-width: 1100px !important;
-//   padding: 0 20px !important;
-//   margin: 0 auto !important;
-// }
-
-@media only screen and (max-width: 960px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -63,14 +34,4 @@ ul {
 
 a {
   text-decoration: none !important;
-}
-
-//******************//
-//***   MOBILE   ***//
-//******************//
-
-@media only screen and (max-width: 576px) {
-  .container {
-    padding: 0 16px !important;
-  }
 }
