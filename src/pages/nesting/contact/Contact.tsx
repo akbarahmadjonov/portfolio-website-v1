@@ -156,7 +156,7 @@ export const Contact = () => {
             <input
               type="hidden"
               name="_next"
-              value="http://localhost:5173/contact"
+              value="https://akbarahmadjonov.com/contact"
             />
 
             <div className="action__forms">
