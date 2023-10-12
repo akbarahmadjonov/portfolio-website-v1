@@ -24,7 +24,7 @@ export const Contact = () => {
 
   // POPOVER
   const upworkPopoverContent = (
-    <div>
+    <div style={{ width: "100%", maxWidth: "350px" }}>
       <p>I'm available for projects on Upwork.</p>
       <a
         target="_blank"
