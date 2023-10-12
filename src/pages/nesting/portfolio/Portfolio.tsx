@@ -11,7 +11,7 @@ import { FcOpenedFolder } from "react-icons/fc";
 export const Portfolio: React.FC = () => {
   // Popover
   const githubPopoverContent = (
-    <div style={{ width: "100%", maxWidth: "350px" }}>
+    <div style={{ width: "100%", maxWidth: "300px" }}>
       <p>
         GitHub code links are available upon request to those who reach out.
         Feel free to contact me for more information.
