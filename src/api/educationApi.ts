@@ -12,11 +12,9 @@ export async function fetchEducation(): Promise<EducationData[]> {
 
     const data = await response.json();
 
-    console.log(data);
-
     return data;
   } catch (error) {
-    console.error("Error fetching education data:", error);
+    // console.error("Error fetching education data:", error);
     throw error;
   }
 }
