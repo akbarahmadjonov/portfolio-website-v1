@@ -8,12 +8,13 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": resolve("src"),
-      "@components": resolve("src", "widgets"),
+      "@api": resolve("src", "api"),
+      "@app": resolve("src", "app"),
       "@pages": resolve("src", "pages"),
       "@images": resolve("src", "shared", "assets", "images"),
-      "@api": resolve("src", "api"),
       "@types": resolve("src", "types"),
-      "@app": resolve("src", "app"),
+      "@components": resolve("src", "widgets"),
+      "@translations": resolve("src", "translations"),
     },
   },
 });
