@@ -3,6 +3,7 @@ import Routings from "@pages/index";
 // ANT DESIGN
 import { LoadingOutlined } from "@ant-design/icons";
 import { Spin } from "antd";
+import { Footer } from "@components/Footer/Footer.tsx";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -38,6 +39,7 @@ function App() {
   return (
     <>
       <Routings />
+      <Footer />
     </>
   );
 }
