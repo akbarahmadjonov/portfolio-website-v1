@@ -56,7 +56,7 @@ export const Home: React.FC = () => {
               <div className="home__flexWrapper">
                 {" "}
                 <h2 className="home__title">Akbar A.</h2>
-                <p className="home__job">Frontend Developer</p>
+                <p className="home__job">FullStack Developer</p>
               </div>
               <div className="home__menuIconWrapper">
                 <AiOutlineMenuFold

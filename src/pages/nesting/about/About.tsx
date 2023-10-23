@@ -19,7 +19,7 @@ export const About = () => {
               target="_blank"
               href="https://teal-nicholle-18.tiiny.site/"
             >
-              akbarahmadjonov.resume.website <GoLinkExternal />
+              akbarahmadjonov.resume <GoLinkExternal />
             </a>
           </span>
           <span className="about__parts">
@@ -37,8 +37,8 @@ export const About = () => {
         </div>
         <div className="about__selfSectionWrapper">
           <p className="about__myselfSection">
-            Hello World! My full name is Akbar Ahmadjonov. I am a frontend
-            developer with over one years of web experience building websites. I
+            Hello World! My full name is Akbar Ahmadjonov. I am both frontend
+            and backend developer with over one years of web experience building websites. I
             am passionate about web development in all forms and like building
             apps that can help others. I have created - and improved - dozens of
             successful web applications/websites that have reached 200 users.
