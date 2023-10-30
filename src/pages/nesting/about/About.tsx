@@ -48,7 +48,7 @@ export const About = () => {
             programming languages. Outside of work I am constantly teaching
             myself and learning how to build apps with various platforms,
             frameworks, languages, etc. My other hobbies include: gaming,
-            running, lifting, football, golf, and more!
+            running, lifting, football, checkers, and more!
           </p>
         </div>
         {/* SKILLS SECTION */}

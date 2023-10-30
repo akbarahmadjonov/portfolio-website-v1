@@ -41,3 +41,14 @@
   font-weight: 500;
   color: #bebebe;
 }
+
+// MEDIA
+@media only screen and (max-width: 555px) {
+  .footer__inner {
+    flex-direction: column;
+  }
+
+  .footer__links {
+    margin-bottom: 14px;
+  }
+}
