@@ -47,8 +47,7 @@ export const About = () => {
             expand my skill set by exploring diverse platforms, frameworks, and
             programming languages. Outside of work I am constantly teaching
             myself and learning how to build apps with various platforms,
-            frameworks, languages, etc. My other hobbies include: gaming,
-            running, lifting, football, checkers, and more!
+            frameworks, languages, etc. My other hobbies include: Robotics, Math, checkers, and more!
           </p>
         </div>
         {/* SKILLS SECTION */}
