@@ -142,7 +142,7 @@ export const Contact = () => {
         </div>
         {/* CONTACT FORM */}
         <section className="action">
-          <h2 className="action__title">Leave a message</h2>
+          <h2 className="action__title">Leave a project overview</h2>
           <form
             action="https://formsubmit.co/akbarahmadjonovv@gmail.com"
             method="POST"
@@ -164,7 +164,7 @@ export const Contact = () => {
                 <Input
                   className="action__input"
                   size="large"
-                  placeholder="Subject (Service you're looking for)"
+                  placeholder="Type of Project"
                   name="subject"
                 />
                 <Input
@@ -183,7 +183,7 @@ export const Contact = () => {
               <TextArea
                 className="action__input"
                 rows={4}
-                placeholder="Your message"
+                placeholder="Additional details & Budget"
                 name="message"
               />
               <div className="action__submit">
