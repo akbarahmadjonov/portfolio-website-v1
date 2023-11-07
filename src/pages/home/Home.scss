@@ -87,9 +87,9 @@
   transition: all 0.1s ease-out;
 
   &:hover {
-    transform: skewY(1deg);
-    box-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
-    border: 1px solid #777676;
+    // transform: skewY(1deg);
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.9);
+    // border: 1px solid #777676;
     color: #fff;
   }
 }
@@ -109,6 +109,7 @@
   margin-left: 50px;
   padding: 20px;
 
+  border-radius: 2px;
   // overflow: hidden;
   overflow-y: scroll;
   background-color: white;
