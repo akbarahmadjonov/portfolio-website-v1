@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import "./Home.scss";
 import ProfilePic from "@images/akbar-profile.jpg";
+import PDF from "../../shared/assets/akbar-res.pdf";
 // Icons
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
@@ -11,6 +12,7 @@ import { BiLogoUpwork } from "react-icons/bi";
 import { BiLogoTelegram } from "react-icons/bi";
 import { BsStackOverflow } from "react-icons/bs";
 import { AiOutlineMenuFold } from "react-icons/ai";
+import { FiDownload } from "react-icons/fi";
 
 // Type for component's state
 interface HomeState {
@@ -119,14 +121,19 @@ export const Home: React.FC = () => {
                 </NavLink>
               </li>
               <li>
+                <Link to={"/"} className="home__componentPagesItem">
+                  MY INSIGHTS
+                </Link>
+              </li>
+              <li>
                 <a
+                  href={PDF}
+                  download
                   target="_blank"
-                  href="https://teal-nicholle-18.tiiny.site/"
-                  className={`home__componentPagesItem ${
-                    isLinkActive("/resume") ? "active-link" : ""
-                  }`}
+                  className="home__componentPagesItem"
+                  rel="noreferrer"
                 >
-                  RESUME
+                  RESUME <FiDownload style={{ marginLeft: "5px" }} size={18} />
                 </a>
               </li>
               <li>
