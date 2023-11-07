@@ -183,7 +183,7 @@ export const Contact = () => {
               <TextArea
                 className="action__input"
                 rows={4}
-                placeholder="Additional details & Budget"
+                placeholder="Please provide a brief description of your project and any budget constraints (if applicable)."
                 name="message"
               />
               <div className="action__submit">
