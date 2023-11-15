@@ -43,7 +43,7 @@ const Routings = () => {
         <Route
           path="/"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div>Please wait...</div>}>
               {" "}
               <Home />{" "}
             </Suspense>
@@ -52,7 +52,7 @@ const Routings = () => {
           <Route
             index
             element={
-              <Suspense fallback={<div>Loading...</div>}>
+              <Suspense fallback={<div>Please wait...</div>}>
                 {" "}
                 <About />{" "}
               </Suspense>
@@ -61,7 +61,7 @@ const Routings = () => {
           <Route
             path="about"
             element={
-              <Suspense fallback={<div>Loading...</div>}>
+              <Suspense fallback={<div>Please wait...</div>}>
                 {" "}
                 <About />{" "}
               </Suspense>
@@ -70,7 +70,7 @@ const Routings = () => {
           <Route
             path="education"
             element={
-              <Suspense fallback={<div>Loading...</div>}>
+              <Suspense fallback={<div>Please wait...</div>}>
                 {" "}
                 <Education />{" "}
               </Suspense>
@@ -79,7 +79,7 @@ const Routings = () => {
           <Route
             path="experience"
             element={
-              <Suspense fallback={<div>Loading...</div>}>
+              <Suspense fallback={<div>Please wait...</div>}>
                 {" "}
                 <Experience />{" "}
               </Suspense>
@@ -88,7 +88,7 @@ const Routings = () => {
           <Route
             path="portfolio"
             element={
-              <Suspense fallback={<div>Loading...</div>}>
+              <Suspense fallback={<div>Please wait...</div>}>
                 {" "}
                 <Portfolio />{" "}
               </Suspense>
@@ -97,7 +97,7 @@ const Routings = () => {
           <Route
             path="contact"
             element={
-              <Suspense fallback={<div>Loading...</div>}>
+              <Suspense fallback={<div>Please wait...</div>}>
                 {" "}
                 <Contact />{" "}
               </Suspense>
@@ -106,7 +106,7 @@ const Routings = () => {
           <Route
             path="blog"
             element={
-              <Suspense fallback={<div>Loading...</div>}>
+              <Suspense fallback={<div>Please wait...</div>}>
                 {" "}
                 <Blog />{" "}
               </Suspense>
