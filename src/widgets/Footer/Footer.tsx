@@ -7,13 +7,27 @@ export const Footer: React.FC = () => {
       <div className="container">
         <div className="footer__inner">
           <div className="footer__links">
-            <h4 className="footer__links-title">Usage</h4>
+            <h4 className="footer__links-title">Inner links</h4>
             <ul className="footer__list">
               <li className="footer__items">
-                <a className="footer__link" href="#">Privacy Policy</a>
+                <a className="footer__link" href="#">
+                  Services
+                </a>
               </li>
               <li className="footer__items">
-                <a className="footer__link" href="#">Terms and Conditions</a>
+                <a className="footer__link" href="#">
+                  Testimonials
+                </a>
+              </li>
+              <li className="footer__items">
+                <a className="footer__link" href="#">
+                  Blog
+                </a>
+              </li>
+              <li className="footer__items">
+                <a className="footer__link" href="#">
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
@@ -21,30 +35,34 @@ export const Footer: React.FC = () => {
             <h4 className="footer__links-title">Services</h4>
             <ul className="footer__list">
               <li className="footer__items">
-                <a className="footer__link" href="#">Web Development</a>
+                <a className="footer__link" href="#">
+                  Web Development
+                </a>
               </li>
               <li className="footer__items">
-                <a className="footer__link" href="#">Frontend Development</a>
+                <a className="footer__link" href="#">
+                  Frontend Development
+                </a>
               </li>
               <li className="footer__items">
-                <a className="footer__link" href="#">Backend Development</a>
+                <a className="footer__link" href="#">
+                  Backend Development
+                </a>
               </li>
             </ul>
           </div>
           <div className="footer__links">
-            <h4 className="footer__links-title">Inner links</h4>
+            <h4 className="footer__links-title">Usage</h4>
             <ul className="footer__list">
               <li className="footer__items">
-                <a className="footer__link" href="#">Services</a>
+                <a className="footer__link" href="#">
+                  Privacy Policy
+                </a>
               </li>
               <li className="footer__items">
-                <a className="footer__link" href="#">Testimonials</a>
-              </li>
-              <li className="footer__items">
-                <a className="footer__link" href="#">Blog</a>
-              </li>
-              <li className="footer__items">
-                <a className="footer__link" href="#">Contact</a>
+                <a className="footer__link" href="#">
+                  Terms and Conditions
+                </a>
               </li>
             </ul>
           </div>

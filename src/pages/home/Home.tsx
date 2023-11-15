@@ -75,31 +75,31 @@ export const Home: React.FC = () => {
                   target="_blank"
                   href="https://linkedin.com/in/akbar-ahmadjonov"
                 >
-                  <AiFillLinkedin size={22} color="white" />
+                  <AiFillLinkedin size={22} color="aliceblue" />
                 </a>
                 <a target="_blank" href="https://github.com/akbarahmadjonov">
-                  <AiFillGithub size={22} color="white" />
+                  <AiFillGithub size={22} color="aliceblue" />
                 </a>
                 <a
                   target="_blank"
                   href="https://www.instagram.com/akbarahmadjonov_/"
                 >
-                  <AiFillInstagram size={22} color="white" />
+                  <AiFillInstagram size={22} color="aliceblue" />
                 </a>
                 <a target="_blank" href="https://twitter.com/akbarahmadjonov">
-                  <AiOutlineTwitter size={22} color="white" />
+                  <AiOutlineTwitter size={22} color="aliceblue" />
                 </a>
                 <a href="https://www.upwork.com/freelancers/~013a4ec95ed10e8d2e">
-                  <BiLogoUpwork size={22} color="white" />
+                  <BiLogoUpwork size={22} color="aliceblue" />
                 </a>
                 <a target="_blank" href="https://t.me/akbarahmadjonov">
-                  <BiLogoTelegram size={22} color="white" />
+                  <BiLogoTelegram size={22} color="aliceblue" />
                 </a>
                 <a
                   target="_blank"
                   href="https://stackoverflow.com/users/20420027/akbar-ahmadjonov"
                 >
-                  <BsStackOverflow size={22} color="white" />
+                  <BsStackOverflow size={22} color="aliceblue" />
                 </a>
               </span>
             </div>

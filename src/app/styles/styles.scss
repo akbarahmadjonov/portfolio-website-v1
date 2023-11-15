@@ -1,5 +1,5 @@
 //import fonts
-@import "./fonts/Open_sans/stylesheet.scss";
+@import "./fonts/inter/stylesheet.css";
 //import base
 @import "./base/style.scss";
 //import components
@@ -8,8 +8,7 @@
 // @import "./layouts/style.scss";
 
 body {
-  font-family: "Open Sans", sans-serif;
-  font-family: monospace;
+  font-family: "Inter", sans-serif;
   margin: 0;
 }
 

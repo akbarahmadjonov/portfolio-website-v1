@@ -28,16 +28,18 @@
   margin: 0;
   margin-top: 15px;
 
-  font-weight: 600;
+  // font-weight: 600;
+  font-weight: 500;
   font-size: 26px;
   color: #fff;
+  color: aliceblue;
 }
 
 .home__job {
   margin: 0;
 
   font-size: 14px;
-  color: #777676;
+  color: #888;
 }
 
 .home__menuIcon {
@@ -58,8 +60,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
 
     margin-right: 10px;
     margin-bottom: 10px;
@@ -68,7 +70,7 @@
     border-radius: 50%;
     transition: all 0.1s ease;
     &:hover {
-      background-color: #777676;
+      background-color: #292929;
     }
   }
 }
@@ -79,7 +81,8 @@
   margin-bottom: 10px;
 
   font-size: 14px;
-  font-weight: 600;
+  // font-weight: 600;
+  font-weight: 500;
   border-radius: 4px;
 
   color: #bebebe;
