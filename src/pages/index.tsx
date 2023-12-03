@@ -35,6 +35,12 @@ const Blog = lazy(() =>
     default: module.Blog,
   }))
 );
+// MAIN
+const Main = lazy(() =>
+  import("@pages/main/Main").then((module) => ({
+    default: module.Main,
+  }))
+);
 
 const Routings = () => {
   return (
@@ -43,7 +49,7 @@ const Routings = () => {
         <Route
           path="/"
           element={
-            <Suspense fallback={<div>Please wait...</div>}>
+            <Suspense fallback={<div>Fetching, please wait...</div>}>
               {" "}
               <Home />{" "}
             </Suspense>
@@ -52,7 +58,7 @@ const Routings = () => {
           <Route
             index
             element={
-              <Suspense fallback={<div>Please wait...</div>}>
+              <Suspense fallback={<div>Fetching, please wait...</div>}>
                 {" "}
                 <About />{" "}
               </Suspense>
@@ -61,7 +67,7 @@ const Routings = () => {
           <Route
             path="about"
             element={
-              <Suspense fallback={<div>Please wait...</div>}>
+              <Suspense fallback={<div>Fetching, please wait...</div>}>
                 {" "}
                 <About />{" "}
               </Suspense>
@@ -70,7 +76,7 @@ const Routings = () => {
           <Route
             path="education"
             element={
-              <Suspense fallback={<div>Please wait...</div>}>
+              <Suspense fallback={<div>Fetching, please wait...</div>}>
                 {" "}
                 <Education />{" "}
               </Suspense>
@@ -79,7 +85,7 @@ const Routings = () => {
           <Route
             path="experience"
             element={
-              <Suspense fallback={<div>Please wait...</div>}>
+              <Suspense fallback={<div>Fetching, please wait...</div>}>
                 {" "}
                 <Experience />{" "}
               </Suspense>
@@ -88,7 +94,7 @@ const Routings = () => {
           <Route
             path="portfolio"
             element={
-              <Suspense fallback={<div>Please wait...</div>}>
+              <Suspense fallback={<div>Fetching, please wait...</div>}>
                 {" "}
                 <Portfolio />{" "}
               </Suspense>
@@ -97,7 +103,7 @@ const Routings = () => {
           <Route
             path="contact"
             element={
-              <Suspense fallback={<div>Please wait...</div>}>
+              <Suspense fallback={<div>Fetching, please wait...</div>}>
                 {" "}
                 <Contact />{" "}
               </Suspense>
@@ -106,13 +112,23 @@ const Routings = () => {
           <Route
             path="blog"
             element={
-              <Suspense fallback={<div>Please wait...</div>}>
+              <Suspense fallback={<div>Fetching, please wait...</div>}>
                 {" "}
                 <Blog />{" "}
               </Suspense>
             }
           />
         </Route>
+        {/* MAIN PAGE */}
+        <Route
+          path="/work"
+          element={
+            <Suspense>
+              {" "}
+              <Main />{" "}
+            </Suspense>
+          }
+        />
       </Routes>
     </>
   );

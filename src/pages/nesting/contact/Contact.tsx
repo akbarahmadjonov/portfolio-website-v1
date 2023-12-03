@@ -166,12 +166,14 @@ export const Contact = () => {
                   size="large"
                   placeholder="Type of Project"
                   name="subject"
+                  required
                 />
                 <Input
                   className="action__input"
                   size="large"
                   placeholder="Your name"
                   name="name"
+                  required
                 />
               </div>
               <Input
@@ -179,6 +181,7 @@ export const Contact = () => {
                 size="large"
                 placeholder="Email address or phone number"
                 name="email"
+                required
               />
               <TextArea
                 className="action__input"

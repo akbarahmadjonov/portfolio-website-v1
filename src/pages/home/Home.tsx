@@ -121,8 +121,8 @@ export const Home: React.FC = () => {
                 </NavLink>
               </li>
               <li>
-                <Link to={"/"} className="home__componentPagesItem">
-                  MY INSIGHTS
+                <Link to={"/work"} className="home__componentPagesItem">
+                  WORK PAGE
                 </Link>
               </li>
               <li>
