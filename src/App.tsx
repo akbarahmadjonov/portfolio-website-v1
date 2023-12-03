@@ -39,7 +39,7 @@ function App() {
   return (
     <>
       <Routings />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
