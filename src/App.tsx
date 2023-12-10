@@ -39,7 +39,7 @@ function App() {
   return (
     <>
       <Routings />
-      {/* <Footer /> */}
+      <Footer />
 
       <div className="snowflakes" aria-hidden="true">
         <div className="snowflake">❅</div>
