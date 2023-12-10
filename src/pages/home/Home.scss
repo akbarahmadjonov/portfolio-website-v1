@@ -83,24 +83,29 @@
   font-size: 14px;
   // font-weight: 600;
   font-weight: 500;
-  border-radius: 4px;
+  border-radius: 9999px;
 
   color: #bebebe;
   border: 1px solid transparent;
   transition: all 0.1s ease-out;
-  -webkit-mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/300%
-    100%;
-  background-repeat: no-repeat;
 
   &:hover {
     // transform: skewY(1deg);
-    box-shadow: 0 0 2px rgba(255, 255, 255, 2);
+    // box-shadow: 0 0 2px rgba(255, 255, 255, 2);
     // border: 1px solid #777676;
     color: #fff;
-    border: 1px solid #292929;
-
-    animation: shimmer 1.3s;
+    border: 1px solid #3a3a3a;
   }
+}
+
+.home__newPage {
+  margin-right: 10px;
+  padding: 6px 10px;
+
+  color: #0ac7b4;
+  background-color: #083a33;
+  font-weight: 500;
+  border-radius: 9999px;
 }
 
 @keyframes shimmer {

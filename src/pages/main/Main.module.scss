@@ -1,0 +1,199 @@
+body {
+  background-color: white;
+}
+
+.myComponentContainer {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main {
+  background-image: url("../../shared/assets/images/main/main-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
+}
+
+.main__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__list {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.main__item {
+  padding: 0px 15px;
+}
+
+.mainLink {
+  color: aliceblue;
+  transition: color 0.3s ease; /* Smooth transition effect for color */
+
+  &:hover {
+    color: #888;
+  }
+}
+
+.translations {
+  color: aliceblue;
+}
+
+// HERO SECTION
+.hero {
+  // display: flex;
+  // align-items: center;
+}
+
+.heroInner {
+  margin-top: 150px;
+  // width: 100%;
+  // max-width: 500px;
+}
+
+.heroNewPage {
+  margin-right: 10px;
+  padding: 6px 10px;
+
+  color: #0ac7b4;
+  background-color: #083a33;
+  font-weight: 500;
+  border-radius: 9999px;
+}
+
+.heroNewPageIntroduce {
+  color: #888;
+}
+
+.heroNewPageWorkclass {
+  color: aliceblue;
+}
+
+.heroNewPagelink {
+  display: inline-flex;
+  margin-left: 10px;
+  padding: 6px 15px;
+
+  border-radius: 9999px;
+  border: 1px solid #3a3a3a;
+  color: aliceblue;
+
+  &:hover {
+    background-color: #1f1f1f;
+    border: 1px solid #1f1f1f;
+  }
+}
+
+.heroTextSmall {
+  margin: 0;
+  margin-top: 20px;
+
+  font-size: 60px;
+  font-weight: normal;
+  // color: white;
+
+  background: linear-gradient(180deg, #fff, #adadad);
+  -webkit-background-clip: text; /* For WebKit/Blink browsers like Chrome and Safari */
+  color: transparent;
+
+  -webkit-mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/300%
+    100%;
+  background-repeat: no-repeat;
+  animation: shimmerText 3.5s;
+}
+
+.heroTextBig {
+  margin: 0;
+
+  font-size: 75px;
+  font-weight: 900;
+  // color: white;
+
+  background: linear-gradient(180deg, #fff, #adadad);
+  -webkit-background-clip: text; /* For WebKit/Blink browsers like Chrome and Safari */
+  color: transparent;
+
+  -webkit-mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/300%
+    100%;
+  background-repeat: no-repeat;
+  animation: shimmerText 4.5s;
+}
+
+@keyframes shimmerText {
+  100% {
+    -webkit-mask-position: left;
+  }
+}
+
+.heroTextParagraph {
+  margin: 0;
+
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 5px;
+  font-weight: 100;
+  color: aliceblue;
+}
+
+.heroButtonsSchedule,
+.heroButtonServices {
+  width: 100%;
+  max-width: 139px;
+  margin-top: 50px;
+  margin-right: 20px;
+  padding: 15px 0;
+
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid aliceblue;
+  background-color: transparent;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.heroButtonsSchedule {
+  background-color: aliceblue;
+  color: #1a1a1a;
+
+  &:hover {
+    -webkit-mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/300%
+      100%;
+    background-repeat: no-repeat;
+    animation: shimmer 1.5s ease;
+  }
+}
+
+.heroButtonServices {
+  border: 1px solid #888;
+
+  &:hover {
+    background-color: #1f1f1f;
+    border: 1px solid #1f1f1f;
+  }
+
+  transition: all 0.3s ease;
+}
+
+@keyframes shimmer {
+  100% {
+    -webkit-mask-position: left;
+  }
+}
+
+.heroIcons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 154px;
+}
+
+.heroItems {
+  margin-right: 10px;
+}

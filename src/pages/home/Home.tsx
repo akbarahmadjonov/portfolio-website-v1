@@ -11,7 +11,7 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { BiLogoUpwork } from "react-icons/bi";
 import { BiLogoTelegram } from "react-icons/bi";
 import { BsStackOverflow } from "react-icons/bs";
-import { AiOutlineMenuFold } from "react-icons/ai";
+import { SlMenu } from "react-icons/sl";
 import { FiDownload } from "react-icons/fi";
 
 // Type for component's state
@@ -61,10 +61,10 @@ export const Home: React.FC = () => {
                 <p className="home__job">Frontend Developer</p>
               </div>
               <div className="home__menuIconWrapper">
-                <AiOutlineMenuFold
+                <SlMenu
                   className="home__menuIcon"
                   color="white"
-                  size={50}
+                  size={40}
                   onClick={handleMenuIcon}
                 />
               </div>
@@ -121,9 +121,9 @@ export const Home: React.FC = () => {
                 </NavLink>
               </li>
               <li>
-                <Link to={"/work"} className="home__componentPagesItem">
-                  WORK PAGE
-                </Link>
+                <a href="/work" className="home__componentPagesItem">
+                  WORK PAGE <span className="home__newPage">New</span>
+                </a>
               </li>
               <li>
                 <a
