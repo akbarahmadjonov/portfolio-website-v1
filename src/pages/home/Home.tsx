@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import "./Home.scss";
-import ProfilePic from "@images/akbar-profile2.jpeg";
+import ProfilePic from "@images/akbar-profile3.jpg";
 import PDF from "../../shared/assets/akbar-resume-latest.pdf";
 // Icons
 import { AiFillLinkedin } from "react-icons/ai";
