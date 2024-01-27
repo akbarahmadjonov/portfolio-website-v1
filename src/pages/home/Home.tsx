@@ -133,7 +133,8 @@ export const Home: React.FC = () => {
                   className="home__componentPagesItem"
                   rel="noreferrer"
                 >
-                  RESUME <FiDownload style={{ marginLeft: "5px" }} size={18} />
+                  RESUME <FiDownload style={{ marginRight: "6px" }} size={18} />
+                  <span className="home__newPage">New</span>
                 </a>
               </li>
               <li>
@@ -163,7 +164,7 @@ export const Home: React.FC = () => {
                   }`}
                   to={"/portfolio"}
                 >
-                  PORTFOLIO
+                  PORTFOLIO <span className="home__newPage">New</span>
                 </NavLink>
               </li>
               <li>
