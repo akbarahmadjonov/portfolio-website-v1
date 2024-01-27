@@ -17,7 +17,7 @@ export const About = () => {
             <a
               className="about__links link"
               target="_blank"
-              href="https://teal-nicholle-18.tiiny.site/"
+              href="https://akbarahmadjonov.tiiny.site"
             >
               akbarahmadjonov.resume <GoLinkExternal />
             </a>
@@ -27,7 +27,14 @@ export const About = () => {
             Lives in Tashkent, Uzbekistan
           </span>
           <span className="about__parts">
-            <FaInfoCircle className="about__icon" size={14} /> Birthday: July 15
+            <FaInfoCircle className="about__icon" size={14} /> Email:{" "}
+            <a
+              className="about__links link"
+              target="_blank"
+              href="mailto:akbarahmadjonovv@gmail.com"
+            >
+              akbarahmadjonovv@gmail.com <GoLinkExternal />
+            </a>
           </span>
           {/* <span className="about__parts">
             <FaInfoCircle className="about__icon" size={14} /> Experience: Nearly 1
@@ -37,17 +44,17 @@ export const About = () => {
         <div className="about__selfSectionWrapper">
           <p className="about__myselfSection">
             Hi, thanks for checking out my Website! My full name is Akbar
-            Ahmadjonov. I am both frontend and backend developer with almost one
-            years of web experience building websites. I am passionate about web
-            development in all forms and like building apps that can help
-            others. I have created - and improved - dozens of successful web
-            applications/websites that have reached 200 users. And I have worked
-            with individuals and companies. I maintain an unwavering dedication
-            to continuous self-improvement. I continually expand my skill set by
-            exploring diverse platforms, frameworks, and programming languages.
-            Outside of work I am constantly teaching myself and learning how to
-            build apps with various platforms, frameworks, languages, etc. My
-            other hobbies include: Robotics, Math, checkers, and more!
+            Ahmadjonov. I’m a dynamic, result-oriented and strong customer
+            focused front-end developer with 1+ years of experience in building
+            responsive and user-centric web applications. Proficient in HTML5,
+            CSS3, JavaScript and modern front-end framework React.js. I have a
+            proven track of translating design mockups and wireframes into
+            pixel-perfect, intuitive user interfaces. Additionally, I’m
+            experienced in utilizing preprocessors like SCSS, version control
+            systems like Git, and task runners like Webpack. Strong collaborator
+            with a passion for staying updated and emerging web technologies and
+            best practices. I’m eager to learn and work on myself to sharpen my
+            skills. Excellent communication abilities are key in my work!
           </p>
         </div>
         {/* SKILLS SECTION */}

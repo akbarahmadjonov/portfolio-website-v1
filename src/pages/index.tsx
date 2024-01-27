@@ -42,6 +42,8 @@ const Main = lazy(() =>
   }))
 );
 
+import NotFound from "@components/NotFoundPage/NotFoundPage";
+
 const Routings = () => {
   return (
     <>
@@ -118,6 +120,7 @@ const Routings = () => {
               </Suspense>
             }
           />
+          <Route path="/*" element={<NotFound />} />
         </Route>
         {/* MAIN PAGE */}
         <Route
