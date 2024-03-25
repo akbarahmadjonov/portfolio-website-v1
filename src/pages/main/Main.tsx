@@ -107,7 +107,7 @@ export const Main: React.FC = () => {
                 <AiOutlineTwitter size={26} color="aliceblue" />{" "}
               </a>
               <a
-                href="https://www.upwork.com/freelancers/~013a4ec95ed10e8d2e"
+                href="/contact"
                 className={styles.heroItems}
               >
                 <BiLogoUpwork size={26} color="aliceblue" />{" "}

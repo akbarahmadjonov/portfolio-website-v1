@@ -46,6 +46,11 @@ export const Home: React.FC = () => {
         <div className="home__inner">
           <div className="home__innerLeft">
             <div className="home__flexs">
+              <div style={{ position: "absolute", left: 0, right: 0 }}>
+                <marquee behavior="" direction="">
+                  <p style={{ color: "white" }}>COMING SOON......</p>
+                </marquee>
+              </div>
               <NavLink to={"/"}>
                 <img
                   className="home__pic"
@@ -89,7 +94,7 @@ export const Home: React.FC = () => {
                 <a target="_blank" href="https://twitter.com/akbarahmadjonov">
                   <AiOutlineTwitter size={22} color="aliceblue" />
                 </a>
-                <a href="https://www.upwork.com/freelancers/~013a4ec95ed10e8d2e">
+                <a href="/contact">
                   <BiLogoUpwork size={22} color="aliceblue" />
                 </a>
                 <a target="_blank" href="https://t.me/akbarahmadjonov">

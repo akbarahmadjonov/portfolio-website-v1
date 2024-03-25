@@ -26,10 +26,7 @@ export const Contact = () => {
   const upworkPopoverContent = (
     <div style={{ width: "100%", maxWidth: "350px" }}>
       <p>I'm available for projects on Upwork.</p>
-      <a
-        target="_blank"
-        href="https://www.upwork.com/freelancers/~013a4ec95ed10e8d2e"
-      >
+      <a target="_blank" href="">
         Click here
       </a>
     </div>
@@ -104,10 +101,7 @@ export const Contact = () => {
               {""}
               <span className="contact__links">
                 Hire me on{" "}
-                <a
-                  className="contact__innerLink link"
-                  href="https://www.upwork.com/freelancers/~013a4ec95ed10e8d2e"
-                >
+                <a className="contact__innerLink link" href="/contact">
                   Upwork
                 </a>
               </span>
