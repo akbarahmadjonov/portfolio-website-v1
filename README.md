@@ -2,6 +2,8 @@
 
 Welcome to the repository of my personal website, [akbarahmadjonov.com](https://akbarahmadjonov.com). This site serves as an online portfolio and a space to share my thoughts and experiences.
 
+<img src='https://i.postimg.cc/3RpWgLSS/Screenshot-12.png' width='700' />
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Installation](#installation)
